@@ -1,0 +1,9 @@
+<label>Item Name</label>
+<input type="text" class="form-control" [(ngModel)]="itemName"> 
+<p>{{ itemName }}</p>
+<button class="btn btn-primary" (click)="onCreateItem()">Add item</button>
+<!-- <ng-template #noServer><p>No server was created</p></ng-template> -->
+<!-- <app-item *ngFor="let item of items"></app-item>  -->
+<ul *ngFor="let item of items">
+    <li>{{item.nombreCampo}} - {{item.valor}}</li>
+</ul>
